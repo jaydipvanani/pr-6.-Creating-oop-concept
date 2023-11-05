@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table>
+    <th>name</th>
+    <th>email</th>
+    <th>phone number</th>
+    </thead>
+    <tbody>
+        <tr>
+            <th id="name1"></th>
+            <th id="email1"></th>
+            <th id="phone1"></th>
+        </tr>
+        <tr>
+            <th id="name2"></th>
+            <th id="email2"></th>
+            <th id="phone2"></th>
+        </tr>
+        <tr>
+            <th id="name3"></th>
+            <th id="email3"></th>
+            <th id="phone3"></th>
+        </tr>
+        <tr>
+            <th id="name4"></th>
+            <th id="email4"></th>
+            <th id="phone4"></th>
+        </tr>
+
+    </tbody>
+    </table>
+</body>
+
+</html>
+
+<script>
+
+class person {
+            constructor(name, email, phone) {
+                this.n = name;
+                this.e = email;
+                this.ph = phone;
+            }
+            p_name() {
+                document.getElementById('name1').innerHTML = p1.n;
+                document.getElementById('name2').innerHTML = p2.n;
+                document.getElementById('name3').innerHTML = p3.n;
+                document.getElementById('name4').innerHTML = p4.n;
+
+            }
+            p_email() {
+
+                document.getElementById('email1').innerHTML = p1.e;
+                document.getElementById('email2').innerHTML = p2.e;
+                document.getElementById('email3').innerHTML = p3.e;
+                document.getElementById('email4').innerHTML = p4.e;
+
+            }
+            p_phone() {
+                document.getElementById('phone1').innerHTML = p1.ph;
+                document.getElementById('phone2').innerHTML = p2.ph;
+                document.getElementById('phone3').innerHTML = p3.ph;
+                document.getElementById('phone4').innerHTML = p4.ph;
+            }
+        }
+
+        let p1 = new person("jay", "jay@gmail.com", 12345)
+        let p2 = new person("ajay", "ajay@gmail.com", 12345)
+        let p3 = new person("vijay", "vijay@gmail.com", 12345)
+        let p4 = new person("ashish", "ashish@gmail.com", 12345)
+
+        p1.p_name();
+        p1.p_email();
+        p1.p_phone();
+
+
+</script>

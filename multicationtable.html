@@ -1,0 +1,24 @@
+<script>
+    class table {
+
+        constructor(number) {
+            this.number = number;
+        }
+
+        printTable() {
+            let i = 1;
+            // while (i <= 10) {
+            //     console.log(this.number + "x" + i + "=" + this.number * i);
+            //     i++;
+            // } 
+            for (i =1 ; i<=10; i++){
+                console.log(this.number + "x" + i + "=" + this.number * i);   
+            }
+        }
+    }
+    let a = parseInt(prompt("Enter tabel no.")
+    )
+    const x = new table(a);
+    x.printTable();
+
+</script>
